@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  shell:
+    desc: run temporary container terraform and passthrough current directory
+    cmds:
+      - docker run --entrypoint /bin/sh --env-file .env --rm -it -v .:/srv hashicorp/terraform:1.9
