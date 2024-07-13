@@ -11,7 +11,7 @@ Example of a simple LXC creation in proxmox using terraform
 
 ## Prepare
 
-### Proxmox creating a user and configuring permissions
+### Proxmox create user and configuring permissions
 Create Role
 ```bash
 pveum role add TerraformProv -privs "Datastore.AllocateSpace Datastore.Audit Pool.Allocate Sys.Audit Sys.Console Sys.Modify VM.Allocate VM.Audit VM.Clone VM.Config.CDROM VM.Config.Cloudinit VM.Config.CPU VM.Config.Disk VM.Config.HWType VM.Config.Memory VM.Config.Network VM.Config.Options VM.Migrate VM.Monitor VM.PowerMgmt SDN.Use"
@@ -33,7 +33,7 @@ Additional information: [Proxmox: Deploying Infrastructure with Terraform](https
 
 ### Change settings
 
-All the basic settings LXC in the file `vars.auto.tfvars`
+All the basic settings LXC in the file [`vars.auto.tfvars`](https://github.com/akmalovaa/terraform-proxmox-lxc/blob/main/vars.auto.tfvars)
 
 export env variables for connect proxmox:
 ```conf
